@@ -1,9 +1,17 @@
-from typing import List, OrderedDict
+"""
+loads the df
+"""
+
+from typing import List
+from collections import OrderedDict
 
 import xml.etree.ElementTree as ET
 import xmltodict
 
 import pandas as pd
+
+import os
+
 
 Books = List[OrderedDict]
 
@@ -25,34 +33,21 @@ def load_ds(f_path: str) -> Books:
     return xml_dct['data']['book']
 
 
-def preprocess_d0s(df: pd.DataFrame) -> pd.DataFrame:
-    def extract_d0(cell):
-        cell = cell['topics']['d0']
-        if isinstance(cell, list):
-            return None
-        return cell
-
-    df_d0 = df['metadata'].map(extract_d0)
-
-    df['d0'] = df_d0
-    df.dropna(inplace=True)
-
-    return df
+def to_df(books: Books) -> pd.DataFrame:
+    return pd.DataFrame.from_records(books)
 
 
-def preprocess(books: Books) -> pd.DataFrame:
-    df = pd.DataFrame.from_records(books)
-
-    df = preprocess_d0s(df)
-
+def get_df_flow(ds_path: str, ds_dir = DS_DIR) -> pd.DataFrame:
+    """
+    load the ds and preprocess it
+    """
+    books: Books = load_ds(os.path.join(DS_DIR, ds_path))
+    df = to_df(books)
     return df
 
 
 if __name__ == "__main__":
-    import os
-
     ds_path_lst = os.listdir(DS_DIR)
 
-    for ds_path in ds_path_lst:
-        books: Books = load_ds(os.path.join(DS_DIR, ds_path))
-        print(preprocess(books).head())
+    for ds_name in ds_path_lst:
+        print(get_df_flow(ds_name))
