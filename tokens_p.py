@@ -2,88 +2,71 @@
 tokenizes the blurb bodies 
 """
 
-from string import punctuation
+from scipy.sparse import csr_matrix
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
-import unicodedata
-import sys
-from typing import List, Set
-from nltk import word_tokenize
+from typing import List, Tuple
+
 from nltk.corpus import stopwords
 import nltk
 nltk.download('stopwords')
 
 
-def tokenize(df: pd.DataFrame, src_col: str = "body", dst_col: str = "body_tokens") -> pd.DataFrame:
+def preview_features(
+        bodies: List[str],
+        features: csr_matrix, term_names: List[str],
+        doc_idx: int, num_features: int = 30):
     """
-    tokenizes (also removes stop-words and punctuation) the body text of src_col and stores it in dst_col of df
+    previews the features and the body which they were taken from.
+
+    params:
+    features is a 2D numpy sparse matrix
     """
-    def _tokenize(body: str) -> List[str]:
-        stop = stopwords.words('english') + list(punctuation)
-        return [i for i in word_tokenize(body.lower()) if i not in stop]
+    doc_scores = features[doc_idx, :].todense()
 
-    df[dst_col] = df[src_col].map(_tokenize)
+    term_idxs_sorted = np.fliplr(doc_scores.argsort())
 
-    return df
+    for i in range(num_features):
+        term_idx_inorder = term_idxs_sorted[0, i]
+
+        term = term_names[term_idx_inorder]
+        tfidf = doc_scores[0, term_idx_inorder]
+
+        print('{0:20s} {1:f} '.format(term, tfidf))
+    print()
+    print(bodies[doc_idx])
 
 
-def remove_utf_punctuation(
-        df: pd.DataFrame, src_col: str = 'body_tokens',
-        dst_col: str = 'body_tokens_nopunc') -> pd.DataFrame:
+def tokenize_flow(df: pd.DataFrame, **tf_params) -> Tuple[TfidfVectorizer, csr_matrix]:
     """
-    removes unicode punctuation not removed by tokenize
+    tokenizes the blurb bodies in df and returns the sklearn vectorizer object and the feature matrix
     """
+    if not 'stop_words' in tf_params:
+        tf_params['stop_words'] = stopwords.words('english') + OUR_STOP_WORDS
 
-    tbl = dict.fromkeys(i for i in range(sys.maxunicode)
-                        if unicodedata.category(chr(i)).startswith('P'))
+    vectorizer = TfidfVectorizer(**tf_params)
+    corpus = df['body']
+    X = vectorizer.fit_transform(corpus)
 
-    def _remove_utf_punctuation(tokens: List[str]) -> List[str]:
-        new_tokens = []
-
-        for token in tokens:
-            punc_removed = token.translate(tbl)
-            if punc_removed != '' or punc_removed is not None:
-                new_tokens.append(punc_removed)
-
-        return new_tokens
-
-    df[dst_col] = df[src_col].map(_remove_utf_punctuation)
-
-    return df
+    return vectorizer, X
 
 
-def get_unique_tokens(df: pd.DataFrame, src_col: str = "body_tokens_nopunc") -> Set:
-    """
-    returns the unique tokens in the token lists of src_col
-    """
-    words = set()
-
-    def _add_words(tokens: List[str]) -> None:
-        for token in tokens:
-            words.add(token)
-
-    df[src_col].map(_add_words)
-
-    return words
-
-
-def tokenize_flow(df: pd.DataFrame) -> pd.DataFrame:
-    df = tokenize(df)
-    df = remove_utf_punctuation(df)
-
-    return df
+OUR_STOP_WORDS = [
+    'would'
+]
 
 
 if __name__ == "__main__":
     import load_p
     import genres_p
+
     import os
 
     ds_name: str = [f for f in os.listdir(load_p.DS_DIR) if 'train' in f][0]
     df = load_p.get_df_flow(ds_name)
     df = genres_p.parse_genres_flow(df)
 
-    df = tokenize_flow(df)
-    print(df.head())
+    vectorizer, X = tokenize_flow(df)
 
-    words = get_unique_tokens(df)
-    print("len words:", len(words))
+    preview_features(df['body'], X, vectorizer.get_feature_names(), 113, 50)

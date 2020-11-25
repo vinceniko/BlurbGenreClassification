@@ -34,6 +34,9 @@ def load_ds(f_path: str) -> Books:
 
 
 def to_df(books: Books) -> pd.DataFrame:
+    """
+    converts Books list of dictionaries into a dataframe
+    """
     return pd.DataFrame.from_records(books)
 
 
@@ -43,6 +46,7 @@ def get_df_flow(ds_path: str, ds_dir = DS_DIR) -> pd.DataFrame:
     """
     books: Books = load_ds(os.path.join(DS_DIR, ds_path))
     df = to_df(books)
+    
     return df
 
 
