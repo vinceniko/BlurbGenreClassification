@@ -15,7 +15,7 @@ def get_preprocess_df(ds_path: str, ds_dir=load_p.DS_DIR) -> pd.DataFrame:
     """
     load the ds and preprocesses it
     """
-    df = load_p.get_df_flow(ds_path, ds_dir)
+    df = load_p.get_df_flow()
     df = genres_p.parse_genres_flow(df)
 
     return df

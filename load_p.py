@@ -40,7 +40,7 @@ def to_df(books: Books) -> pd.DataFrame:
     return pd.DataFrame.from_records(books)
 
 
-def get_df_flow(ds_path: str, ds_dir = DS_DIR) -> pd.DataFrame:
+def get_df(ds_path: str, ds_dir = DS_DIR) -> pd.DataFrame:
     """
     load the ds and preprocess it
     """
@@ -50,8 +50,35 @@ def get_df_flow(ds_path: str, ds_dir = DS_DIR) -> pd.DataFrame:
     return df
 
 
-if __name__ == "__main__":
-    ds_path_lst = os.listdir(DS_DIR)
+def get_df_keyword(dir_path: str, keyword: str='train'):
+    """
+    get df from dir_path using a keyword
+    """
+    ds_name: str = [f for f in os.listdir(dir_path) if keyword in f][0]
+    print('loading:', ds_name)
+    df = get_df(ds_name)
 
-    for ds_name in ds_path_lst:
-        print(get_df_flow(ds_name))
+    return df
+
+
+def get_entire_ds_as_df(ds_dir = DS_DIR, f_name_keywords=['train', 'dev', 'test']):
+    """
+    used to concatenate all sets into one
+    """
+    df = pd.DataFrame()
+    for kind in f_name_keywords:
+        df_temp = get_df_keyword(ds_dir, kind)
+        df_temp.set_index('title', inplace=True)
+        df = pd.concat([df, df_temp], ignore_index=False)
+    df.reset_index()
+
+    return df
+
+
+def get_df_flow(ds_dir = DS_DIR) -> pd.DataFrame:
+    return get_entire_ds_as_df(ds_dir)
+
+
+if __name__ == "__main__":
+    df = get_df_flow()
+    print(df.shape)

@@ -2,8 +2,8 @@
 tokenizes the blurb bodies 
 """
 
-from scipy.sparse import csr_matrix
 import numpy as np
+from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 from typing import List, Tuple
@@ -63,8 +63,7 @@ if __name__ == "__main__":
 
     import os
 
-    ds_name: str = [f for f in os.listdir(load_p.DS_DIR) if 'train' in f][0]
-    df = load_p.get_df_flow(ds_name)
+    df = load_p.get_df_flow()
     df = genres_p.parse_genres_flow(df)
 
     vectorizer, X = tokenize_flow(df)
