@@ -1,0 +1,35 @@
+Over: 0.79
+
+Genre: Arts & Entertainment, Accuracy: 0.81, Classified as: [('Arts & Entertainment', 0.81), ('History', 0.04), ('Biography & Memoir', 0.03), ('Self-Improvement', 0.02), ('Popular Science', 0.02), ('Children’s Books', 0.02), ('Teen & Young Adult', 0.01), ('Religion & Philosophy', 0.01), ('Literary Fiction', 0.01), ('Graphic Novels & Manga', 0.01)]
+
+Genre: Cooking, Accuracy: 0.96, Classified as: [('Cooking', 0.96), ('History', 0.01), ('Children’s Books', 0.01), ('Biography & Memoir', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: History, Accuracy: 0.79, Classified as: [('History', 0.79), ('Biography & Memoir', 0.08), ('Popular Science', 0.03), ('Teen & Young Adult', 0.02), ('Religion & Philosophy', 0.02), ('Mystery & Suspense', 0.02), ('Self-Improvement', 0.01), ('Literary Fiction', 0.01), ('Children’s Books', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Mystery & Suspense, Accuracy: 0.86, Classified as: [('Mystery & Suspense', 0.86), ('Romance', 0.03), ('Literary Fiction', 0.03), ('Teen & Young Adult', 0.02), ('Science Fiction', 0.02), ('Graphic Novels & Manga', 0.01), ('Fantasy', 0.01), ('Biography & Memoir', 0.01)]
+
+Genre: Popular Science, Accuracy: 0.82, Classified as: [('Popular Science', 0.82), ('Religion & Philosophy', 0.03), ('Arts & Entertainment', 0.03), ('Self-Improvement', 0.02), ('History', 0.02), ('Cooking', 0.02), ('Children’s Books', 0.02), ('Biography & Memoir', 0.02), ('Literary Fiction', 0.01)]
+
+Genre: Religion & Philosophy, Accuracy: 0.8, Classified as: [('Religion & Philosophy', 0.8), ('Self-Improvement', 0.08), ('Popular Science', 0.05), ('History', 0.04), ('Biography & Memoir', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Romance, Accuracy: 0.83, Classified as: [('Romance', 0.83), ('Teen & Young Adult', 0.04), ('Literary Fiction', 0.04), ('Mystery & Suspense', 0.03), ('Fantasy', 0.03), ('Biography & Memoir', 0.02), ('Children’s Books', 0.01)]
+
+Genre: Self-Improvement, Accuracy: 0.9, Classified as: [('Self-Improvement', 0.9), ('Biography & Memoir', 0.04), ('Religion & Philosophy', 0.02), ('Romance', 0.01), ('Popular Science', 0.01), ('Graphic Novels & Manga', 0.01), ('Children’s Books', 0.01)]
+
+Under: 0.79
+
+Genre: Biography & Memoir, Accuracy: 0.71, Classified as: [('Biography & Memoir', 0.71), ('Literary Fiction', 0.07), ('History', 0.07), ('Teen & Young Adult', 0.03), ('Self-Improvement', 0.03), ('Mystery & Suspense', 0.03), ('Children’s Books', 0.02), ('Religion & Philosophy', 0.01), ('Popular Science', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Children’s Books, Accuracy: 0.73, Classified as: [('Children’s Books', 0.73), ('Teen & Young Adult', 0.07), ('Graphic Novels & Manga', 0.04), ('History', 0.03), ('Science Fiction', 0.02), ('Popular Science', 0.02), ('Fantasy', 0.02), ('Biography & Memoir', 0.02), ('Arts & Entertainment', 0.02), ('Romance', 0.01), ('Religion & Philosophy', 0.01), ('Mystery & Suspense', 0.01), ('Literary Fiction', 0.01)]
+
+Genre: Fantasy, Accuracy: 0.77, Classified as: [('Fantasy', 0.77), ('Science Fiction', 0.04), ('Romance', 0.04), ('Children’s Books', 0.04), ('Mystery & Suspense', 0.03), ('Graphic Novels & Manga', 0.03), ('Teen & Young Adult', 0.02), ('Literary Fiction', 0.02), ('Religion & Philosophy', 0.01), ('Biography & Memoir', 0.01)]
+
+Genre: Graphic Novels & Manga, Accuracy: 0.69, Classified as: [('Graphic Novels & Manga', 0.69), ('Fantasy', 0.07), ('Science Fiction', 0.06), ('Teen & Young Adult', 0.05), ('Mystery & Suspense', 0.05), ('Literary Fiction', 0.02), ('Children’s Books', 0.02), ('Romance', 0.01), ('History', 0.01), ('Biography & Memoir', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Literary Fiction, Accuracy: 0.74, Classified as: [('Literary Fiction', 0.74), ('Teen & Young Adult', 0.08), ('Biography & Memoir', 0.07), ('Mystery & Suspense', 0.03), ('Fantasy', 0.02), ('Science Fiction', 0.01), ('Romance', 0.01), ('History', 0.01), ('Graphic Novels & Manga', 0.01), ('Children’s Books', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Science Fiction, Accuracy: 0.78, Classified as: [('Science Fiction', 0.78), ('Fantasy', 0.07), ('Literary Fiction', 0.04), ('Teen & Young Adult', 0.03), ('Graphic Novels & Manga', 0.03), ('Mystery & Suspense', 0.02), ('Children’s Books', 0.01)]
+
+Genre: Teen & Young Adult, Accuracy: 0.6, Classified as: [('Teen & Young Adult', 0.6), ('Literary Fiction', 0.08), ('Fantasy', 0.06), ('Children’s Books', 0.06), ('Science Fiction', 0.04), ('Mystery & Suspense', 0.04), ('Graphic Novels & Manga', 0.04), ('Romance', 0.03), ('History', 0.02), ('Self-Improvement', 0.01), ('Religion & Philosophy', 0.01), ('Biography & Memoir', 0.01), ('Arts & Entertainment', 0.01)]
+
+

@@ -1,0 +1,75 @@
+Over: 0.77
+
+Genre: Arts & Entertainment, Accuracy: 0.78, Classified as: [('Arts & Entertainment', 0.78), ('Children’s Books', 0.07), ('Literary Fiction', 0.02), ('History', 0.02), ('Graphic Novels & Manga', 0.02), ('Biography & Memoir', 0.02), ('Self-Improvement', 0.01), ('Religion & Philosophy', 0.01), ('Reference', 0.01), ('Popular Science', 0.01), ('Politics', 0.01), ('Crafts, Home & Garden', 0.01), ('Classics', 0.01), ('Business', 0.01)]
+
+Genre: Children’s Books, Accuracy: 0.93, Classified as: [('Children’s Books', 0.93), ('Teen & Young Adult', 0.02), ('Mystery & Suspense', 0.01), ('Graphic Novels & Manga', 0.01)]
+
+Genre: Cooking, Accuracy: 0.95, Classified as: [('Cooking', 0.95), ('Children’s Books', 0.02), ('Crafts, Home & Garden', 0.01)]
+
+Genre: Crafts, Home & Garden, Accuracy: 0.8, Classified as: [('Crafts, Home & Garden', 0.8), ('Children’s Books', 0.08), ('Arts & Entertainment', 0.03), ('Self-Improvement', 0.02), ('Cooking', 0.02), ('Popular Science', 0.01), ('Literary Fiction', 0.01), ('History', 0.01), ('Health & Fitness', 0.01), ('Graphic Novels & Manga', 0.01), ('Business', 0.01), ('Biography & Memoir', 0.01)]
+
+Genre: Health & Fitness, Accuracy: 0.77, Classified as: [('Health & Fitness', 0.77), ('Religion & Philosophy', 0.05), ('Self-Improvement', 0.03), ('Psychology', 0.03), ('Popular Science', 0.02), ('Biography & Memoir', 0.02), ('Arts & Entertainment', 0.02), ('Teen & Young Adult', 0.01), ('Sports', 0.01), ('Politics', 0.01), ('Parenting', 0.01), ('Literary Fiction', 0.01), ('Humor', 0.01), ('Crafts, Home & Garden', 0.01), ('Cooking', 0.01), ('Children’s Books', 0.01)]
+
+Genre: Mystery & Suspense, Accuracy: 0.88, Classified as: [('Mystery & Suspense', 0.88), ('Children’s Books', 0.03), ('Teen & Young Adult', 0.02), ('Literary Fiction', 0.02), ('Romance', 0.01), ('Graphic Novels & Manga', 0.01)]
+
+Genre: Poetry, Accuracy: 0.83, Classified as: [('Poetry', 0.83), ('Children’s Books', 0.05), ('Religion & Philosophy', 0.04), ('Literary Fiction', 0.03), ('Biography & Memoir', 0.02), ('History', 0.01), ('Graphic Novels & Manga', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Religion & Philosophy, Accuracy: 0.86, Classified as: [('Religion & Philosophy', 0.86), ('Self-Improvement', 0.03), ('Children’s Books', 0.03), ('Popular Science', 0.02), ('Politics', 0.02), ('History', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Western Fiction, Accuracy: 0.82, Classified as: [('Western Fiction', 0.82), ('Mystery & Suspense', 0.09), ('Children’s Books', 0.03), ('Literary Fiction', 0.02), ('Teen & Young Adult', 0.01), ('History', 0.01), ('Historical Fiction', 0.01), ('Graphic Novels & Manga', 0.01), ('Biography & Memoir', 0.01)]
+
+Under: 0.77
+
+Genre: Biography & Memoir, Accuracy: 0.47, Classified as: [('Biography & Memoir', 0.47), ('Literary Fiction', 0.12), ('Children’s Books', 0.08), ('History', 0.06), ('Mystery & Suspense', 0.05), ('Religion & Philosophy', 0.03), ('Politics', 0.03), ('Teen & Young Adult', 0.02), ('Self-Improvement', 0.02), ('Arts & Entertainment', 0.02), ('Women’s Fiction', 0.01), ('Sports', 0.01), ('Romance', 0.01), ('Popular Science', 0.01), ('Poetry', 0.01), ('Health & Fitness', 0.01), ('Cooking', 0.01), ('Classics', 0.01), ('Business', 0.01)]
+
+Genre: Business, Accuracy: 0.7, Classified as: [('Business', 0.7), ('Self-Improvement', 0.12), ('Politics', 0.09), ('Religion & Philosophy', 0.02), ('Biography & Memoir', 0.02), ('Sports', 0.01), ('Reference', 0.01), ('Psychology', 0.01), ('Popular Science', 0.01), ('History', 0.01), ('Cooking', 0.01), ('Children’s Books', 0.01)]
+
+Genre: Classics, Accuracy: 0.46, Classified as: [('Classics', 0.46), ('Literary Fiction', 0.13), ('Children’s Books', 0.12), ('Religion & Philosophy', 0.07), ('Biography & Memoir', 0.05), ('Arts & Entertainment', 0.03), ('Poetry', 0.02), ('Mystery & Suspense', 0.02), ('History', 0.02), ('Graphic Novels & Manga', 0.02), ('Teen & Young Adult', 0.01), ('Self-Improvement', 0.01), ('Reference', 0.01), ('Psychology', 0.01), ('Politics', 0.01), ('Health & Fitness', 0.01), ('Fantasy', 0.01)]
+
+Genre: Fantasy, Accuracy: 0.52, Classified as: [('Fantasy', 0.52), ('Children’s Books', 0.17), ('Teen & Young Adult', 0.08), ('Graphic Novels & Manga', 0.06), ('Mystery & Suspense', 0.05), ('Science Fiction', 0.04), ('Romance', 0.03), ('Literary Fiction', 0.03), ('Religion & Philosophy', 0.01), ('Classics', 0.01)]
+
+Genre: Games, Accuracy: 0.6, Classified as: [('Games', 0.6), ('Children’s Books', 0.17), ('Sports', 0.13), ('Travel', 0.02), ('Science Fiction', 0.02), ('Popular Science', 0.02), ('History', 0.02), ('Graphic Novels & Manga', 0.02)]
+
+Genre: Gothic & Horror, Accuracy: 0.0, Classified as: [('Fantasy', 0.36), ('Graphic Novels & Manga', 0.24), ('Children’s Books', 0.12), ('Teen & Young Adult', 0.08), ('Mystery & Suspense', 0.08), ('Literary Fiction', 0.08), ('Arts & Entertainment', 0.04)]
+
+Genre: Graphic Novels & Manga, Accuracy: 0.72, Classified as: [('Graphic Novels & Manga', 0.72), ('Children’s Books', 0.13), ('Mystery & Suspense', 0.04), ('Teen & Young Adult', 0.03), ('Science Fiction', 0.02), ('Literary Fiction', 0.02), ('Fantasy', 0.02), ('Romance', 0.01)]
+
+Genre: Historical Fiction, Accuracy: 0.05, Classified as: [('Literary Fiction', 0.48), ('Mystery & Suspense', 0.13), ('Children’s Books', 0.11), ('Historical Fiction', 0.05), ('Teen & Young Adult', 0.04), ('Graphic Novels & Manga', 0.04), ('Biography & Memoir', 0.04), ('Romance', 0.03), ('Western Fiction', 0.02), ('History', 0.02), ('Women’s Fiction', 0.01), ('Religion & Philosophy', 0.01), ('Fantasy', 0.01)]
+
+Genre: History, Accuracy: 0.65, Classified as: [('History', 0.65), ('Biography & Memoir', 0.07), ('Children’s Books', 0.06), ('Religion & Philosophy', 0.05), ('Politics', 0.05), ('Mystery & Suspense', 0.03), ('Popular Science', 0.02), ('Literary Fiction', 0.02), ('Travel', 0.01), ('Graphic Novels & Manga', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Humor, Accuracy: 0.31, Classified as: [('Children’s Books', 0.35), ('Humor', 0.31), ('Literary Fiction', 0.05), ('Graphic Novels & Manga', 0.05), ('Biography & Memoir', 0.05), ('Arts & Entertainment', 0.05), ('Travel', 0.02), ('Teen & Young Adult', 0.02), ('Religion & Philosophy', 0.02), ('Politics', 0.02), ('Classics', 0.02), ('Business', 0.02), ('Self-Improvement', 0.01), ('Mystery & Suspense', 0.01), ('History', 0.01)]
+
+Genre: Literary Fiction, Accuracy: 0.75, Classified as: [('Literary Fiction', 0.75), ('Children’s Books', 0.06), ('Mystery & Suspense', 0.04), ('Biography & Memoir', 0.04), ('Teen & Young Adult', 0.03), ('Women’s Fiction', 0.01), ('Science Fiction', 0.01), ('Romance', 0.01), ('Religion & Philosophy', 0.01), ('History', 0.01), ('Graphic Novels & Manga', 0.01)]
+
+Genre: Military Fiction, Accuracy: 0.0, Classified as: [('Children’s Books', 0.57), ('Literary Fiction', 0.29), ('Mystery & Suspense', 0.14)]
+
+Genre: Parenting, Accuracy: 0.61, Classified as: [('Parenting', 0.61), ('Children’s Books', 0.17), ('Psychology', 0.08), ('Biography & Memoir', 0.08), ('Travel', 0.01), ('Teen & Young Adult', 0.01), ('Self-Improvement', 0.01), ('History', 0.01), ('Health & Fitness', 0.01)]
+
+Genre: Pets, Accuracy: 0.69, Classified as: [('Pets', 0.69), ('Children’s Books', 0.19), ('Health & Fitness', 0.08), ('Crafts, Home & Garden', 0.04)]
+
+Genre: Politics, Accuracy: 0.58, Classified as: [('Politics', 0.58), ('History', 0.15), ('Religion & Philosophy', 0.07), ('Business', 0.04), ('Biography & Memoir', 0.03), ('Psychology', 0.02), ('Mystery & Suspense', 0.02), ('Self-Improvement', 0.01), ('Popular Science', 0.01), ('Humor', 0.01), ('Cooking', 0.01), ('Children’s Books', 0.01)]
+
+Genre: Popular Science, Accuracy: 0.65, Classified as: [('Popular Science', 0.65), ('Children’s Books', 0.13), ('Arts & Entertainment', 0.04), ('Religion & Philosophy', 0.03), ('Business', 0.03), ('Science Fiction', 0.02), ('Biography & Memoir', 0.02), ('Psychology', 0.01), ('Politics', 0.01), ('Literary Fiction', 0.01), ('History', 0.01), ('Health & Fitness', 0.01), ('Graphic Novels & Manga', 0.01), ('Crafts, Home & Garden', 0.01), ('Cooking', 0.01)]
+
+Genre: Psychology, Accuracy: 0.25, Classified as: [('Psychology', 0.25), ('Religion & Philosophy', 0.19), ('Self-Improvement', 0.13), ('Health & Fitness', 0.06), ('Biography & Memoir', 0.06), ('Popular Science', 0.05), ('Parenting', 0.05), ('Mystery & Suspense', 0.05), ('Politics', 0.04), ('Business', 0.04), ('Children’s Books', 0.03), ('History', 0.02), ('Literary Fiction', 0.01), ('Classics', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Reference, Accuracy: 0.73, Classified as: [('Reference', 0.73), ('Children’s Books', 0.06), ('Self-Improvement', 0.04), ('Popular Science', 0.03), ('Politics', 0.02), ('History', 0.02), ('Arts & Entertainment', 0.02), ('Religion & Philosophy', 0.01), ('Psychology', 0.01), ('Parenting', 0.01), ('Literary Fiction', 0.01), ('Biography & Memoir', 0.01)]
+
+Genre: Romance, Accuracy: 0.72, Classified as: [('Romance', 0.72), ('Mystery & Suspense', 0.08), ('Teen & Young Adult', 0.05), ('Literary Fiction', 0.05), ('Children’s Books', 0.03), ('Women’s Fiction', 0.02), ('Graphic Novels & Manga', 0.02), ('Fantasy', 0.01), ('Biography & Memoir', 0.01)]
+
+Genre: Science Fiction, Accuracy: 0.68, Classified as: [('Science Fiction', 0.68), ('Children’s Books', 0.1), ('Mystery & Suspense', 0.06), ('Graphic Novels & Manga', 0.06), ('Literary Fiction', 0.03), ('Fantasy', 0.03), ('Teen & Young Adult', 0.02), ('Popular Science', 0.01), ('History', 0.01)]
+
+Genre: Self-Improvement, Accuracy: 0.7, Classified as: [('Self-Improvement', 0.7), ('Religion & Philosophy', 0.07), ('Children’s Books', 0.05), ('Business', 0.05), ('Psychology', 0.03), ('Reference', 0.02), ('Health & Fitness', 0.02), ('Biography & Memoir', 0.02), ('Sports', 0.01), ('Politics', 0.01), ('Parenting', 0.01), ('Mystery & Suspense', 0.01), ('Arts & Entertainment', 0.01)]
+
+Genre: Spiritual Fiction, Accuracy: 0.17, Classified as: [('Women’s Fiction', 0.22), ('Spiritual Fiction', 0.17), ('Romance', 0.17), ('Religion & Philosophy', 0.11), ('Literary Fiction', 0.11), ('Mystery & Suspense', 0.06), ('Historical Fiction', 0.06), ('Graphic Novels & Manga', 0.06), ('Children’s Books', 0.06)]
+
+Genre: Sports, Accuracy: 0.52, Classified as: [('Sports', 0.52), ('Religion & Philosophy', 0.09), ('Children’s Books', 0.08), ('Biography & Memoir', 0.07), ('Arts & Entertainment', 0.05), ('Self-Improvement', 0.04), ('Popular Science', 0.03), ('Health & Fitness', 0.03), ('Reference', 0.02), ('Graphic Novels & Manga', 0.02), ('Teen & Young Adult', 0.01), ('Science Fiction', 0.01), ('Literary Fiction', 0.01), ('Business', 0.01)]
+
+Genre: Teen & Young Adult, Accuracy: 0.52, Classified as: [('Teen & Young Adult', 0.52), ('Children’s Books', 0.24), ('Mystery & Suspense', 0.05), ('Literary Fiction', 0.05), ('Graphic Novels & Manga', 0.03), ('Fantasy', 0.03), ('Science Fiction', 0.02), ('Romance', 0.02), ('Religion & Philosophy', 0.01), ('History', 0.01), ('Biography & Memoir', 0.01)]
+
+Genre: Travel, Accuracy: 0.66, Classified as: [('Travel', 0.66), ('Children’s Books', 0.11), ('Literary Fiction', 0.04), ('History', 0.04), ('Biography & Memoir', 0.03), ('Arts & Entertainment', 0.03), ('Teen & Young Adult', 0.02), ('Cooking', 0.02), ('Poetry', 0.01), ('Mystery & Suspense', 0.01), ('Humor', 0.01), ('Business', 0.01)]
+
+Genre: Women’s Fiction, Accuracy: 0.23, Classified as: [('Literary Fiction', 0.37), ('Women’s Fiction', 0.23), ('Romance', 0.12), ('Children’s Books', 0.11), ('Teen & Young Adult', 0.08), ('Biography & Memoir', 0.04), ('Mystery & Suspense', 0.03), ('Spiritual Fiction', 0.01), ('Humor', 0.01), ('Historical Fiction', 0.01)]
+
+

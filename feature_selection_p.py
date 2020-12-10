@@ -11,16 +11,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def get_pca_features(X: csr_matrix) -> csr_matrix:
+def get_pca_features(X: csr_matrix, n_components=100) -> csr_matrix:
     # svd = TruncatedSVD(n_components=2000)
-    svd = TruncatedSVD(n_components=100)
+    svd = TruncatedSVD(n_components=n_components)
     # svd = TruncatedSVD(n_components=200)
     Z = svd.fit_transform(X)
+    # Xhat = svd.inverse_transform(Z)
     
     # ANALYSIS
     pov = np.cumsum(svd.explained_variance_ratio_)
-    print(pov[:-10])
+    plt.plot(pov)
+    print("max pov:", pov[-1])
 
+    # return Z, Xhat
     return Z
 
 if __name__ == "__main__":

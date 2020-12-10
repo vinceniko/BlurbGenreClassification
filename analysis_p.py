@@ -18,7 +18,7 @@ def get_accuracy(yhat, yts):
     return acc
 
 
-def get_misclassified(yhat, yts, output_name):
+def get_misclassified(yhat, yts, df, output_name):
     # conf matrix
     fmt = np.vectorize(lambda x: round(float(x), 2))
     misclassified = pd.DataFrame(
@@ -39,7 +39,7 @@ def misclassified_plot(
         misclassified, output_name, cmap=sns.color_palette(
             "rocket_r", as_cmap=True)):
     # heatmap
-    heatmap = sns.heatmap(misclassified, cmap=cmap)
+    heatmap = sns.heatmap(misclassified, cmap=cmap, xticklabels=True)
     heatmap.get_figure().savefig(
         os.path.join(
             OUTPUT_DIR, "misclassified/{:s}_heatmap.png".format(output_name)),
@@ -77,8 +77,8 @@ def get_sorted_misclassified(misclassified, accuracy):
     return s
 
 
-def misclassified_analysis(yhat, yts, output_name):
-    misclassified = get_misclassified(yhat, yts, output_name)
+def misclassified_analysis(yhat, yts, df, output_name):
+    misclassified = get_misclassified(yhat, yts, df, output_name)
 
     misclassified_plot(misclassified, output_name)
 

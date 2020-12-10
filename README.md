@@ -1,8 +1,11 @@
-# Blurb Classification
+# Blurb Genre Classification
 
-## Project Info
+Vincent Nikolayev & Conner Moore  
+Professor Rangan  
+Machine Learning CS-GY 6923  
 
-### Project Structure
+![preview](outputs/svm_d1-balanced/svm_equal-classes-1116_heatmap.png)
 
-* file names are postfixed with `_p` to indicate they are files that belong to the project, and avoid naming collisions with imported modules
-* functions that are included in main are postfixed with `_flow`, i.e. these functions indicate abstract data transformations from preprocessing all the way to the model
+## Report
+
+The report is found at: [link](blurb-genre-classification-report.pdf)

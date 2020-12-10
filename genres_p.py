@@ -14,6 +14,8 @@ def extract_d0s(df: pd.DataFrame) -> pd.DataFrame:
     df_d0 = df['metadata'].map(_extract_d0)
 
     df['genre'] = df_d0
+    # for converting into numerical form and extracting y
+    df['genre'] = pd.Categorical(df['genre'])
 
     df.dropna(inplace=True)
 
@@ -23,20 +25,26 @@ def extract_d0s(df: pd.DataFrame) -> pd.DataFrame:
 
 
 remove_genres = [
-    'Women’s Fiction',
-    'Psychology',
-    'Poetry',
-    'Historical Fiction',
-    'Humor',
-    'Classics',
-    'Travel',
-    'Sports',
-    'Parenting',
-    'Games',
-    'Gothic & Horror',
-    'Pets',
-    'Spiritual Fiction',
-    'Military Fiction',
+    # 'Women’s Fiction',
+    # 'Psychology',
+    # 'Poetry',
+    # 'Historical Fiction',
+    # 'Humor',
+    # 'Classics',
+    # 'Travel',
+    # 'Sports',
+    # 'Parenting',
+    # 'Games',
+    # 'Gothic & Horror',
+    # 'Pets',
+    # 'Spiritual Fiction',
+    # 'Military Fiction',
+    # 'Politics',
+    # 'Reference',
+    # 'Crafts, Home & Garden',
+    # 'Health & Fitness',
+    # 'Western Fiction',
+    # 'Business',
 ]
 
 # TODO: create multiple such functions for each model variant
@@ -217,7 +225,7 @@ def count_genres_perc(df: pd.DataFrame) -> pd.Series:
     return genre_counts / genre_counts.sum()
 
 
-def equalize_genre_size(
+def balance_genre_size(
         df: pd.DataFrame, class_size: int = None) -> pd.DataFrame:
     if class_size is None:
         class_size = count_genres(df).min()

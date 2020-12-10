@@ -1,0 +1,19 @@
+Over: 0.89
+
+Genre: Children’s Books, Accuracy: 0.89, Classified as: [('Children’s Books', 0.89), ('Fiction', 0.06), ('Nonfiction', 0.04), ('Teen & Young Adult', 0.01)]
+
+Genre: Fiction, Accuracy: 0.93, Classified as: [('Fiction', 0.93), ('Nonfiction', 0.03), ('Children’s Books', 0.03), ('Teen & Young Adult', 0.01)]
+
+Genre: Nonfiction, Accuracy: 0.94, Classified as: [('Nonfiction', 0.94), ('Fiction', 0.03), ('Children’s Books', 0.02)]
+
+Under: 0.89
+
+Genre: Classics, Accuracy: 0.18, Classified as: [('Nonfiction', 0.51), ('Fiction', 0.25), ('Classics', 0.18), ('Children’s Books', 0.05), ('Poetry', 0.02)]
+
+Genre: Humor, Accuracy: 0.16, Classified as: [('Nonfiction', 0.44), ('Fiction', 0.2), ('Children’s Books', 0.19), ('Humor', 0.16), ('Teen & Young Adult', 0.01)]
+
+Genre: Poetry, Accuracy: 0.8, Classified as: [('Poetry', 0.8), ('Nonfiction', 0.14), ('Fiction', 0.03), ('Children’s Books', 0.02), ('Teen & Young Adult', 0.01)]
+
+Genre: Teen & Young Adult, Accuracy: 0.32, Classified as: [('Fiction', 0.47), ('Teen & Young Adult', 0.32), ('Children’s Books', 0.16), ('Nonfiction', 0.05)]
+
+
